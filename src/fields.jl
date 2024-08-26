@@ -1,4 +1,4 @@
-struct IncidentField{F,P}
-    amp::F
-    pol::P
+struct IncidentField{F}
+    f::F
+    basis::B
 end

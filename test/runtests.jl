@@ -1,6 +1,6 @@
-using AngularSpectrum
+using AngularSpectrums
 using Test
 
-@testset "AngularSpectrum.jl" begin
+@testset "AngularSpectrums.jl" begin
     # Write your tests here.
 end

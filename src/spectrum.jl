@@ -1,5 +1,5 @@
 mutable struct AngularSpectrum{F,B,A}
-    incfield::F
+    f::F
     basis::B
     axis::A
 end
@@ -8,7 +8,7 @@ end
 
 Angular spectrum of wave field.
 """
-AngularSpectrum(incfield::F, basis::B) = AngularSpectrum(incfield, basis, [0.0, 0.0, 1.0])
+AngularSpectrum(f::F, basis::B) = AngularSpectrum(f, basis, [0.0, 0.0, 1.0])
 
 """
     rotate!(as::AngularSpectrum, rotaxis, angle)
