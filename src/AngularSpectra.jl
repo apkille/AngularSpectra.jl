@@ -1,4 +1,4 @@
-module AngularSpectrums
+module AngularSpectra
 
 include("bases.jl")
 

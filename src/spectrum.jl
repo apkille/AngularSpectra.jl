@@ -8,7 +8,7 @@ end
 
 Angular spectrum of wave field.
 """
-AngularSpectrum(f::F, basis::B) = AngularSpectrum(f, basis, [0.0, 0.0, 1.0])
+AngularSpectrum(f::F, basis::B) where {F,B} = AngularSpectrum(f, basis, [0.0, 0.0, 1.0])
 
 """
     rotate!(as::AngularSpectrum, rotaxis, angle)

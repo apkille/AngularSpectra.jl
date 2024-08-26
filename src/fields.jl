@@ -1,4 +1,4 @@
-struct IncidentField{F}
+struct IncidentField{F,B}
     f::F
     basis::B
 end
