@@ -3,8 +3,12 @@ uuid = "645da74b-6153-4148-bdaa-45095e55bacb"
 authors = ["Andrew Kille"]
 version = "0.1.0"
 
+[deps]
+Integrals = "de52edbc-65ea-441a-8357-d3a637375a31"
+
 [compat]
 julia = "1.10.4"
+Integrals = "4.4.1"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
