@@ -2,7 +2,7 @@ module AngularSpectra
 
 include("bases.jl")
 
-export HelicityBasis, SphericalBasis
+export AbstractBasis, HelicityBasis, SphericalBasis
 
 
 include("spectrum.jl")
