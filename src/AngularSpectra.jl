@@ -2,16 +2,22 @@ module AngularSpectra
 
 include("bases.jl")
 
-export AbstractBasis, HelicityBasis, SphericalBasis
+export AbstractBasis, HelicityBasis, PSBasis
 
 
 include("spectrum.jl")
 
-export AngularSpectrum, rotate!
+export AngularSpectrum
+
+
+include("predefined.jl")
+
+export edipole
 
 
 include("fields.jl")
 
 export IncidentField
+
 
 end
