@@ -1,10 +1,9 @@
 """
-    AngularSpectrum(incfield, basis, dist)
+    AngularSpectrum(basis, f)
 
 Angular spectrum of wave field.
 """
-struct AngularSpectrum{F,B,D}
-    f::F
+struct AngularSpectrum{B,F}
     basis::B
-    dist::D
+    f::F
 end

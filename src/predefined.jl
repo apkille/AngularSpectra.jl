@@ -1,7 +1,7 @@
 function edipole end
 
-function edipole(basis::PSBasis, moment::M, dist::D, p::P; 
-                epsilon = 1.0, lda = 1.0) where {M,D,P}
+function edipole(basis::PSBasis, moment::M, p::P; 
+                epsilon = 1.0, lda = 1.0) where {M,P}
 
     if length(moment) != 3
         throw(ArgumentError("You inputted a dipole moment vector that is not of dimension three."))
@@ -27,6 +27,6 @@ function edipole(basis::PSBasis, moment::M, dist::D, p::P;
         return [pfield(u,p), sfield(u,p)]
     end
 
-    return AngularSpectrum(f, basis, dist)
+    return AngularSpectrum(basis, f)
 end
 
